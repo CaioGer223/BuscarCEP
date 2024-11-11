@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaCep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="container" onsubmit="return false">
+
+        <h1>Buscar CEP</h1>
+
+        <input required id="cep" type="number" maxlength="8" placeholder="Digite o CEP">
+        <button onclick="buscarCEP()">Buscar</button>
+
+        <table>
+
+            <tr>
+                <th>Logradouro</th>
+                <th>Bairro</th>
+            </tr>
+
+            <tr>
+
+                <td> <p id="logradouro" > 1<!--IMPRIMIR LOGRADOURO--></p> </td>
+                <td> <p id="bairro" >2 <!--IMPRIMIR BAIRRO--></p> </td>
+                
+            </tr>
+
+            <tr>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+
+            <tr>
+                <td> <p id="cidade" >3 <!--IMPRIMIR CIDADE--></p> </td>
+                <td> <p id="estado" > 4<!--IMPRIMIR ESTADO--></p> </td>
+            </tr>
+        </table>
+
+    
+
+    </form>
+    
+    <script src="script01.js"></script>
+
+</body>
+</html>
